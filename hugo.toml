@@ -55,9 +55,9 @@ offlineSearchSummaryLength = 70
 offlineSearchMaxResults = 10
 prism_syntax_highlighting = false
 archived_version = false
+version = "v0.0.3" # x-release-please-version
 
-# version = "v0.0.3"
-# version_menu = "v0.3"
+# version_menu = "v1"
 # url_latest_version = "https://latest-version"
 # Add your release versions here that references the deployed release branch for that version.
 # [[params.versions]]

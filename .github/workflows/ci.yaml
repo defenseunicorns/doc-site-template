@@ -1,4 +1,4 @@
-name: Test Website
+name: Build and Test
 
 on:
   push:
@@ -11,19 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
 
-    - name: Run Tests
-      uses: actions/setup-node@v3
-      with:
-        node-version: 'lts/Hydrogen'
-        cache: 'npm'
-    - run: npm ci
-    - run: npm test
-
+      - name: Run Tests
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/Hydrogen'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm test
