@@ -55,7 +55,7 @@ offlineSearchSummaryLength = 70
 offlineSearchMaxResults = 10
 prism_syntax_highlighting = false
 archived_version = false
-version = "v0.0.3" # x-release-please-version
+version = "v1.0.0" # x-release-please-version
 
 # version_menu = "v1"
 # url_latest_version = "https://latest-version"
