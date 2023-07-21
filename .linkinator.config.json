@@ -1,6 +1,6 @@
 {
   "recurse": true,
-  "skip": "^(https://example.com)",
+  "skip": "^(https://example.com), ^(https://github.com), ^(https://twitter.com)",
   "verbosity": "error",
   "timeout": 0,
   "markdown": true,
