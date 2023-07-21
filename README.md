@@ -35,4 +35,6 @@ Then navigate to [http://localhost:1313/](http://localhost:1313/)
 
 ## Style guide
 
+You can modify the color theme to match your product's by changing the `$secondary` color variable in [_variables_project.scss](assets/scss/_variables_project.scss).
+
 [Color Palette](https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&mode=design)
