@@ -1,7 +1,9 @@
+<!--
 ---
 title: Code Sample
 description: Samples of code
 ---
+-->
 
 ```bash
 echo "This is bash"

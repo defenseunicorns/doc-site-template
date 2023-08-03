@@ -1,7 +1,9 @@
+<!--
 ---
 title: Mermaid Diagram Samples
 description: Mermaid
 ---
+-->
 
 ```mermaid
 graph TD
