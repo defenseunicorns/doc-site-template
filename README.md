@@ -8,8 +8,7 @@ which is a fork of the Google Docsy theme. The Docsy documentation can be used a
 ## Contributing
 
 This repository enforces [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) messages. See the
-documentation for [`release-please`](https://github.com/googleapis/release-please#how-should-i-write-my-commits) for
-correctly formatting commit messages
+documentation for [`release-please`](https://github.com/googleapis/release-please#how-should-i-write-my-commits) for correctly formatting commit messages. [This video](https://www.youtube.com/watch?v=lwGcnDgwmFc&ab_channel=Syntax) does a good job of showing how to add the `Conventional Commit` VSCode extension to use when creating the commit messages.
 
 #### Prerequisites 
 
