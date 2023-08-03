@@ -11,13 +11,17 @@ This repository enforces [Conventional Commit](https://www.conventionalcommits.o
 documentation for [`release-please`](https://github.com/googleapis/release-please#how-should-i-write-my-commits) for
 correctly formatting commit messages
 
+#### Prerequisites 
+
+[Hugo](https://gohugo.io/documentation/) is required in order to utilize the doc site template. You can run `brew install hugo` to quickly install or see the [installation page](https://gohugo.io/installation/) for additional install methods.
+
 ## Getting Started
 
-Create a new repository from this template
+Create a new repository from this template:
 
 ![How to use](static/img/how-to-use.png)
 
-Clone your new site
+Clone your new site:
 
 ```bash
 git clone <git repo>
