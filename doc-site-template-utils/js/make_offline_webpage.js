@@ -60,13 +60,12 @@ function installMissingDependencies() {
       execSync(`npm install --prefix ${tempDir} ${module}`);
       console.log(`'${module}' package installed successfully.`);
     }
-
-    // Call main()
-    main();
-
   } catch (error) {
     console.error('Error installing dependencies:', error.message);
   } finally {
+    // Call main()
+    main();
+    
     // Restore the original NODE_PATH
     process.env.NODE_PATH = originalNodePath;
     require('module').Module._initPaths(); // Refresh module paths
@@ -77,7 +76,7 @@ function installMissingDependencies() {
   }
 }
 
-// Function to to modify git cloned doc-site-template/package.json
+// Function to to modify doc-site-template/package.json
 function modifyPackageJson() {
   const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
   packageJson.scripts['build-D'] = "hugo -D";
