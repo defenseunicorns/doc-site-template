@@ -3,13 +3,6 @@
 stages:
   - build_docs
 
-variables:
-  PYTHON_FOLDER: "../python-utils/" # Where we will stage our python utils for all stages
-  PACKAGE_NAME: "py_utils"
-  RUN_PY_GITLAB_UTILS: "python3 ${PYTHON_FOLDER} gitlab"
-  RUN_PY_SAME_OR_HIGHER: "python3 ${PYTHON_FOLDER}/__version__.py -cmd same_or_higher"
-  RUN_PY_DL: "python3 ${PYTHON_FOLDER} download"
-
 build_docs:
   stage: build_docs
   artifacts:
