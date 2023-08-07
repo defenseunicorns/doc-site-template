@@ -19,6 +19,9 @@ build_docs:
     GO_VERSION: "1.19.12"
     GO_ARCH: "linux-amd64"
     GO_BINARY: "go${GO_VERSION}.${GO_ARCH}.tar.gz"
+    DOC_SITE_TEMPLATE_VERSION: "v1.0.0"
+    DOC_SITE_TEMPLATE_BINARY: "${DOC_SITE_TEMPLATE_VERSION}.tar.gz"
+    DOC_SITE_TEMPLATE_URL: "https://github.com/defenseunicorns/doc-site-template/archive/refs/tags/${DOC_SITE_TEMPLATE_BINARY}"
   before_script:
     - dnf install -y wget
     - mkdir -p temp
@@ -40,8 +43,9 @@ build_docs:
       tar -zxvf temp/${HUGO_BINARY}
       mv -f hugo ${HUGO_INSTALL_DIR}
       hugo version # Verify Hugo installation
-    # Clone doc-site-template
-    - git clone https://github.com/defenseunicorns/doc-site-template.git temp/doc-site-template
+    # Download the v1.0.0 release as a tarball from GitHub and extract it
+    - curl -LJO ${DOC_SITE_TEMPLATE_URL}
+    - tar -xzf ${DOC_SITE_TEMPLATE_BINARY} -C temp/
   script:
     - cd temp/
     # Prep docs-site-template to create offline webpages using Node.js script
