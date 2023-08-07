@@ -1,0 +1,65 @@
+# Example gitlab-ci.yml stage that uses make_offline_webpage.js which captures all of
+# your markdown files (<proj root>/docs/*.md) and creates an offline website.
+stages:
+  - build_docs
+
+variables:
+  PYTHON_FOLDER: "../python-utils/" # Where we will stage our python utils for all stages
+  PACKAGE_NAME: "py_utils"
+  RUN_PY_GITLAB_UTILS: "python3 ${PYTHON_FOLDER} gitlab"
+  RUN_PY_SAME_OR_HIGHER: "python3 ${PYTHON_FOLDER}/__version__.py -cmd same_or_higher"
+  RUN_PY_DL: "python3 ${PYTHON_FOLDER} download"
+
+build_docs:
+  stage: build_docs
+  artifacts:
+    paths:
+      - "${CI_PROJECT_DIR}/docs/public"
+      - "${CI_PROJECT_DIR}/docs/*.html"
+      - "${CI_PROJECT_DIR}/docs/*.md"
+  variables:
+    HUGO_VERSION: "0.115.4"  # Replace with the desired Hugo version
+    HUGO_ARCH: "Linux-64bit"
+    HUGO_BINARY: "hugo_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz"
+    HUGO_URL: "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}"
+    HUGO_INSTALL_DIR: "/usr/local/bin"
+    GO_VERSION: "1.19.12"
+    GO_ARCH: "linux-amd64"
+    GO_BINARY: "go${GO_VERSION}.${GO_ARCH}.tar.gz"
+  before_script:
+    - dnf install -y wget
+    - mkdir -p temp
+    # Install Golang
+    - |
+      wget -q --tries=3 -P temp https://go.dev/dl/${GO_BINARY}
+      tar -C /usr/local -xzf temp/${GO_BINARY}
+      # Add Go binary directory to PATH
+      export PATH=$PATH:/usr/local/go/bin
+      go version # Verify Golang installation
+    # Install NPM
+    - |
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+      . ~/.nvm/nvm.sh
+      nvm install node
+    # Download and install Hugo
+    - |
+      wget -q --tries=3 -P temp ${HUGO_URL}
+      tar -zxvf temp/${HUGO_BINARY}
+      mv -f hugo ${HUGO_INSTALL_DIR}
+      hugo version # Verify Hugo installation
+    # Clone doc-site-template
+    - git clone https://github.com/defenseunicorns/doc-site-template.git temp/doc-site-template
+  script:
+    - cd temp/
+    # Prep docs-site-template to create offline webpages using Node.js script
+    # Pass path to where our markdown doc files are
+    - node $CI_PROJECT_DIR/docs/doc-site-template-utils/js/make_offline_webpage.js --md-path $CI_PROJECT_DIR/docs
+    # doc-site-template ops
+    - cd doc-site-template
+    - npm ci
+    # Build 'public' folder for offline use
+    - npm run build-D
+    # Move hugo public dir to docs
+    - mv -f public $CI_PROJECT_DIR/docs/public
+    # create shortcut in public/ parent directory
+    - ln -sf $CI_PROJECT_DIR/docs/public/docs.html $CI_PROJECT_DIR/docs/docs.html
