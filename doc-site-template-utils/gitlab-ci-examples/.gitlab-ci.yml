@@ -6,10 +6,10 @@ stages:
 build_docs:
   stage: build_docs
   artifacts:
-    paths:
-      - "${CI_PROJECT_DIR}/docs/public"
-      - "${CI_PROJECT_DIR}/docs/*.html"
-      - "${CI_PROJECT_DIR}/docs/*.md"
+  paths:
+    - "${CI_PROJECT_DIR}/docs/public"
+    - "${CI_PROJECT_DIR}/docs/*.html"
+    - "${CI_PROJECT_DIR}/docs/*.md"
   variables:
     HUGO_VERSION: "0.115.4"  # Replace with the desired Hugo version
     HUGO_ARCH: "Linux-64bit"
@@ -20,8 +20,7 @@ build_docs:
     GO_ARCH: "linux-amd64"
     GO_BINARY: "go${GO_VERSION}.${GO_ARCH}.tar.gz"
     DOC_SITE_TEMPLATE_VERSION: "v1.0.0"
-    DOC_SITE_TEMPLATE_BINARY: "${DOC_SITE_TEMPLATE_VERSION}.tar.gz"
-    DOC_SITE_TEMPLATE_URL: "https://github.com/defenseunicorns/doc-site-template/archive/refs/tags/${DOC_SITE_TEMPLATE_BINARY}"
+    DOC_SITE_TEMPLATE_URL: "https://github.com/defenseunicorns/doc-site-template.git"
   before_script:
     - dnf install -y wget
     - mkdir -p temp
@@ -43,11 +42,10 @@ build_docs:
       tar -zxvf temp/${HUGO_BINARY}
       mv -f hugo ${HUGO_INSTALL_DIR}
       hugo version # Verify Hugo installation
-    # Download the v1.0.0 release as a tarball from GitHub and extract it
-    - curl -LJO ${DOC_SITE_TEMPLATE_URL}
-    - tar -xzf ${DOC_SITE_TEMPLATE_BINARY} -C temp/
-  script:
+    # Clone doc-site-template tag release from GitHub
+    - git clone --depth 1 --branch ${DOC_SITE_TEMPLATE_VERSION} ${DOC_SITE_TEMPLATE_URL} temp/doc-site-template
     - cd temp/
+  script:
     # Prep docs-site-template to create offline webpages using Node.js script
     # Pass path to where our markdown doc files are
     - node $CI_PROJECT_DIR/docs/doc-site-template-utils/js/make_offline_webpage.js --md-path $CI_PROJECT_DIR/docs
