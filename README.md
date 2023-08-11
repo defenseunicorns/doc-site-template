@@ -38,3 +38,10 @@ Then navigate to [http://localhost:1313/](http://localhost:1313/)
 You can modify the color theme to match your product's by changing the `$secondary` color variable in [_variables_project.scss](assets/scss/_variables_project.scss).
 
 [Color Palette](https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&mode=design)
+
+To modify the favicon, replace the Doug icons in `static/favicons` with the icons of your choosing. You can use
+[IconGen](http://cthedot.de/icongen) to create the icons in the multiple sizes needed. Make sure and replace all of the
+sizes or it will use the theme's default of Doug.
+
+To modify the logo on your Navbar, change the `navbar_logo` setting under `params.ui` in `hugo.toml`. The logo should be
+an SVG.
