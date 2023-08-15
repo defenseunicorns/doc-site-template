@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/defenseunicorns/doc-site-template/compare/v1.0.1...v1.1.0) (2023-08-15)
+
+
+### Features
+
+* Enable airgapped delivery ([72954fd](https://github.com/defenseunicorns/doc-site-template/commit/72954fd70472d22c7642535889bca4b4a158a239))
+
+
+### Bug Fixes
+
+* Add Doug favicon ([a6a3398](https://github.com/defenseunicorns/doc-site-template/commit/a6a3398fbaa4633591ad8dddc2ee633ea769e3c8))
+* update theme ([cd8b1ee](https://github.com/defenseunicorns/doc-site-template/commit/cd8b1eefbe537781611c747aea9c9b8c17c31a43))
+
 ## [1.0.1](https://github.com/defenseunicorns/doc-site-template/compare/v1.0.0...v1.0.1) (2023-08-10)
 
 
