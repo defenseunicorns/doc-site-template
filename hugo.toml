@@ -2,6 +2,31 @@ baseURL         = "https://example.com/"
 enableGitInfo   = true
 enableRobotsTXT = true
 
+# Set uglyURLs & relativeURLs for hugo to build local offline pages in public/
+# When these are set `npm start` will no longer host functioning webpages. Instead
+#   use `npm run build` to construct the offline public/ directory 
+uglyURLs = false
+relativeURLs = false
+
+# Mount any external directories for use by hugo
+# 
+# source: 
+#   The source directory of the mount. For the main project, this can be either 
+#   project-relative or absolute and even a symbolic link. For other modules it must be 
+#   project-relative.
+# target
+#   Where it should be mounted into Hugo’s virtual filesystem. It must start with one of 
+#   Hugo’s component folders: static, content, layouts, data, assets, i18n, or archetypes. 
+#   E.g. content/blog.
+
+# [[module.mounts]]
+#   source = '../docs/*.md'
+#   target = 'content/en/docs'
+
+[[module.mounts]]
+  source = "content/en"
+  target = "content"
+
 [module]
   proxy = "direct"
 
@@ -61,9 +86,6 @@ enableRobotsTXT = true
 ### Mermaid theme choices
 #[params.mermaid]
 # theme = "neutral" # You can override this default dark theme with other Mermaid themes
-[[module.mounts]]
-  source = "content/en"
-  target = "content"
 
 ## The following merge in theme defaults from: https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/config/_default
 [markup]
