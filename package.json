@@ -16,10 +16,10 @@
     "lint": "markdownlint ./content/**/*.md --ignore node_modules",
     "lint:fix": "markdownlint -f ./content/**/*.md ./docs/**/*.md --ignore node_modules",
     "lint:toml": "taplo lint '**/**/*.toml'",
-    "prepare": "husky install && npm run update",
+    "prepare": "husky install",
     "start": "npm run clean && hugo serve",
     "test": "npm run clean && npm run lint && npm run link-check",
-    "update": "hugo mod get -u ./... && hugo mod tidy"
+    "update": "hugo mod get -u ./... && hugo mod tidy && npx npm-check-updates -u && npm install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
@@ -29,9 +29,9 @@
     "autoprefixer": "^10.4.15",
     "hugo-extended": "^0.117.0",
     "husky": "^8.0.3",
-    "linkinator": "^5.0.1",
-    "markdownlint-cli": "0.35.0",
+    "linkinator": "^5.0.2",
+    "markdownlint-cli": "0.36.0",
     "postcss-cli": "^10.1.0",
-    "prettier": "^3.0.2"
+    "prettier": "^3.0.3"
   }
 }
