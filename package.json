@@ -27,7 +27,7 @@
     "@fontsource/roboto": "^5.0.8",
     "@taplo/cli": "^0.5.2",
     "autoprefixer": "^10.4.15",
-    "hugo-extended": "^0.117.0",
+    "hugo-extended": "^0.119.0",
     "husky": "^8.0.3",
     "linkinator": "^5.0.2",
     "markdownlint-cli": "0.36.0",
