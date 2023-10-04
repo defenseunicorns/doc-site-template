@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/defenseunicorns/doc-site-template/compare/v1.1.0...v1.1.1) (2023-10-04)
+
+
+### Bug Fixes
+
+* Remove pre-commit hooks ([d11d446](https://github.com/defenseunicorns/doc-site-template/commit/d11d446ca3902dad6bf006054203a27a267401b6))
+
 ## [1.1.0](https://github.com/defenseunicorns/doc-site-template/compare/v1.0.1...v1.1.0) (2023-08-15)
 
 
