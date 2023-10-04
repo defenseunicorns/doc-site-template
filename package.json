@@ -16,7 +16,6 @@
     "lint": "markdownlint ./content/**/*.md --ignore node_modules",
     "lint:fix": "markdownlint -f ./content/**/*.md ./docs/**/*.md --ignore node_modules",
     "lint:toml": "taplo lint '**/**/*.toml'",
-    "prepare": "husky install",
     "start": "npm run clean && hugo serve",
     "test": "npm run clean && npm run lint && npm run link-check",
     "update": "hugo mod get -u ./... && hugo mod tidy && npx npm-check-updates -u && npm install"
@@ -28,7 +27,6 @@
     "@taplo/cli": "^0.5.2",
     "autoprefixer": "^10.4.16",
     "hugo-extended": "^0.119.0",
-    "husky": "^8.0.3",
     "linkinator": "^5.0.2",
     "markdownlint-cli": "0.37.0",
     "postcss-cli": "^10.1.0",
