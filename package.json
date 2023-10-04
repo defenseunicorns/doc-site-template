@@ -22,15 +22,15 @@
     "update": "hugo mod get -u ./... && hugo mod tidy && npx npm-check-updates -u && npm install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@fontsource/roboto": "^5.0.8",
     "@taplo/cli": "^0.5.2",
-    "autoprefixer": "^10.4.15",
-    "hugo-extended": "^0.117.0",
+    "autoprefixer": "^10.4.16",
+    "hugo-extended": "^0.119.0",
     "husky": "^8.0.3",
     "linkinator": "^5.0.2",
-    "markdownlint-cli": "0.36.0",
+    "markdownlint-cli": "0.37.0",
     "postcss-cli": "^10.1.0",
     "prettier": "^3.0.3"
   }
