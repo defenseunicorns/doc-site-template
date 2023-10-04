@@ -4,5 +4,13 @@
     "config:base",
     ":disableDependencyDashboard",
     "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    }
   ]
 }
