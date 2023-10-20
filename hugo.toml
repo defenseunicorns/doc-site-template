@@ -49,8 +49,8 @@ proxy = "direct"
 
   archived_version    = false
   copyright           = "Defense Unicorns"
-  github_project_repo = "https://github.com/defenseunicorns/doc-template-site"
-  github_repo         = "https://github.com/defenseunicorns/doc-template-site"
+  github_project_repo = "https://github.com/defenseunicorns/doc-site-template"
+  github_repo         = "https://github.com/defenseunicorns/doc-site-template"
   github_subdir       = "content/en"
   version             = "v1.0.0"
 
