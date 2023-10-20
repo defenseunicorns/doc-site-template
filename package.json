@@ -21,8 +21,8 @@
     "update": "hugo mod get -u ./... && hugo mod tidy && npx npm-check-updates -u && npm install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
     "@fontsource/roboto": "^5.0.8",
     "@taplo/cli": "^0.5.2",
     "autoprefixer": "^10.4.16",
