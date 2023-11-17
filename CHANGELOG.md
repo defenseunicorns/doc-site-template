@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/defenseunicorns/doc-site-template/compare/v1.1.1...v1.1.2) (2023-11-17)
+
+
+### Bug Fixes
+
+* Add documentation for turning off GitHub links ([5467135](https://github.com/defenseunicorns/doc-site-template/commit/5467135d6af8e22e0d2193a8c21252d5a0636b02))
+* Add optional title and fix build ([fd4d81a](https://github.com/defenseunicorns/doc-site-template/commit/fd4d81aaca06d08d0e26c6f78b5b2c5e282d30b8))
+
 ## [1.1.1](https://github.com/defenseunicorns/doc-site-template/compare/v1.1.0...v1.1.1) (2023-10-04)
 
 
