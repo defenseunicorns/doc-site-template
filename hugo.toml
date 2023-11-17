@@ -54,6 +54,9 @@ proxy = "direct"
   github_subdir       = "content/en"
   version             = "v1.0.0"
 
+  #Set show_metalinks to false to remove GitHub links from the right sidebar
+  show_metalinks = true
+
   # version_menu = "v1"
   # url_latest_version = "https://latest-version"
   # Add your release versions here that references the deployed release branch for that version.
@@ -63,6 +66,7 @@ proxy = "direct"
   # [[params.versions]]
   # version = "v0.2"
   # url = "https://v02-version"
+
   [params.ui]
     navbar_logo    = "img/doug.svg" # The product logo on the navbar
     show_nav_title = true           # Remove if the logo includes a title
