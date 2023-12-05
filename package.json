@@ -23,7 +23,6 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@fontsource/roboto": "^5.0.8",
     "@taplo/cli": "^0.5.2",
     "autoprefixer": "^10.4.16",
     "hugo-extended": "^0.120.4",
