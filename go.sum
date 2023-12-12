@@ -1,8 +1,8 @@
 github.com/FortAwesome/Font-Awesome v0.0.0-20230327165841-0698449d50f2 h1:Uv1z5EqCfmiK4IHUwT0m3h/u/WCk+kpRfxvAZhpC7Gc=
 github.com/FortAwesome/Font-Awesome v0.0.0-20230327165841-0698449d50f2/go.mod h1:IUgezN/MFpCDIlFezw3L8j83oeiIuYoj28Miwr/KUYo=
-github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.10 h1:YoqWtaUhHa5xNy80KlB0jmO0/k8FnzM/Zt+P/6QDxb4=
-github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.10/go.mod h1:dpZmIHb64VwZ77ii3h1gVD7agMqCON1CrtwtYeq3u1A=
-github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.3.10 h1:Eek96BCCWS3gXOttUfRKlNFcqUbSMeORW+5IJR55G78=
-github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.3.10/go.mod h1:zQT7gnRyPnVCNxREasYkyewPJLhemxlOGZhbu+9mcfQ=
+github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.11 h1:Htt9CjVsuZPX6YXrX2g4SDIvw5vJSmFAcsXPFByIRdE=
+github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.11/go.mod h1:4qS0z9fh81PKvKm4SFZUtK4kdtdii7aujJLLHzfCp/8=
+github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.3.11 h1:NvL4hkTkJ/qlIeb32Foe63guHDAdsGij15HsDUAXXcE=
+github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.3.11/go.mod h1:zQT7gnRyPnVCNxREasYkyewPJLhemxlOGZhbu+9mcfQ=
 github.com/twbs/bootstrap v5.3.2+incompatible h1:tuiO5acc6xnZUR77Sbi5aKWXxjYxbmsSbJwYrhAKoQQ=
 github.com/twbs/bootstrap v5.3.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
