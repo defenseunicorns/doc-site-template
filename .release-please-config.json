@@ -1,0 +1,9 @@
+{
+	"packages": {
+		".": {
+			"changelog-path": "CHANGELOG.md",
+			"release-type": "node",
+			"pull-request-header": "Production release created"
+		}
+	}
+}
