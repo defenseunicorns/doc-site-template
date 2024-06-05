@@ -62,13 +62,18 @@ proxy = "direct"
   #url_latest_version = "https://latest-version"
   #Add your release versions here that references the deployed release branch for that version.
   [[params.versions]]
-  version = "v0.3 - Latest"
-  #url = "https://latest-version"
+  version = "main"
+  url='/docs'
+
   [[params.versions]]
-  version = "v0.2"
-  #url = "https://v02-version"
+  version = "version1"
+  url = '/version1'
+
   [[params.versions]]
-  version = "v0.1"
+  version = "version2"
+  url = '/version2'
+ 
+
 
   [params.ui]
     navbar_logo    = "img/doug.svg" # The product logo on the navbar

@@ -1,7 +1,8 @@
 ---
 title: Defense Unicorns Docs Template
 linkTitle: Documentation
-menu: { main: { weight: 20 } }
+toc_hide: true
+hide_summary: true
 ---
 
 This is a blank template for creating documentation sites. This template uses the [Defense Unicorns Hugo

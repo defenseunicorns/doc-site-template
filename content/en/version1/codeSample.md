@@ -1,6 +1,7 @@
 ---
 title: Code Sample
 description: Samples of code
+type: docs
 ---
 
 <!--
