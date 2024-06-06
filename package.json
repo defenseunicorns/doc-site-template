@@ -26,8 +26,8 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@taplo/cli": "^0.7.0",
     "autoprefixer": "^10.4.19",
-    "hugo-extended": "^0.126.1",
-    "linkinator": "^6.0.4",
+    "hugo-extended": "^0.126.3",
+    "linkinator": "^6.0.5",
     "markdownlint-cli": "0.41.0",
     "postcss-cli": "^11.0.0"
   }
