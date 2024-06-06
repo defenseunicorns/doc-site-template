@@ -8,7 +8,7 @@ enableRobotsTXT = true
 relativeURLs = false
 uglyURLs     = false
 
-# Mount any external directories for use by hugo
+# Mount any external directories for use by hugo. This is mostly used for creating documentation sections.
 #
 # source:
 #   The source directory of the mount. For the main project, this can be either
@@ -44,7 +44,7 @@ proxy = "direct"
     title       = "Docs Template"
 
 [params]
-  # this merge bring is the theme defaults and allows overriding them if needed.
+  # this exposes the theme defaults that can be overridden. Don't remove this.
   _merge = 'deep'
 
   archived_version    = false
@@ -57,18 +57,18 @@ proxy = "direct"
   #Set show_metalinks to false to remove GitHub links from the right sidebar
   show_metalinks = true
 
-
+  # If you do not require documentation versioning, you cn comment or remove the version section to remove the menu.
   version_menu = "Releases"
   #url_latest_version = "https://latest-version"
   #Add your release versions here that references the deployed release branch for that version.
   [[params.versions]]
-  version = "v0.3 - Latest"
+    version = "v0.3 - Latest"
   #url = "https://latest-version"
   [[params.versions]]
-  version = "v0.2"
+    version = "v0.2"
   #url = "https://v02-version"
   [[params.versions]]
-  version = "v0.1"
+    version = "v0.1"
 
   [params.ui]
     navbar_logo    = "img/doug.svg" # The product logo on the navbar
