@@ -21,14 +21,18 @@
     "test": "npm run clean && npm run lint && npm run link-check",
     "update": "hugo mod get -u ./... && hugo mod tidy && npx npm-check-updates -u && npm install"
   },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.7.2",
+    "bootstrap": "5.3.5"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@taplo/cli": "^0.7.0",
-    "autoprefixer": "^10.4.19",
-    "hugo-extended": "^0.145.0",
-    "linkinator": "^6.0.5",
+    "autoprefixer": "^10.4.21",
+    "hugo-extended": "^0.147.0",
+    "linkinator": "^6.1.2",
     "markdownlint-cli": "0.44.0",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^11.0.1"
   }
 }
