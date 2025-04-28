@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/defenseunicorns/doc-site-template/compare/doc-site-template-v1.5.0...doc-site-template-v2.0.0) (2025-04-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgraded to 1.0 of theme.
+
+### Features
+
+* Upgraded to 1.0 of theme. ([5b74c65](https://github.com/defenseunicorns/doc-site-template/commit/5b74c65b68e7fa89e77071274971e9051acf6cf5))
+
 ## [1.5.0](https://github.com/defenseunicorns/doc-site-template/compare/doc-site-template-v1.4.4...doc-site-template-v1.5.0) (2024-05-20)
 
 
