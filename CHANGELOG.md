@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.1](https://github.com/defenseunicorns/doc-site-template/compare/doc-site-template-v2.0.0...doc-site-template-v2.0.1) (2025-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([b3ee1d9](https://github.com/defenseunicorns/doc-site-template/commit/b3ee1d9ae8df5331603fab36198bc77e4f16bf27))
+* **deps:** update all non-major dependencies ([32e1249](https://github.com/defenseunicorns/doc-site-template/commit/32e124923373f2950a5c38a37f5e342685138538))
+
 ## [2.0.0](https://github.com/defenseunicorns/doc-site-template/compare/doc-site-template-v1.5.0...doc-site-template-v2.0.0) (2025-04-28)
 
 
